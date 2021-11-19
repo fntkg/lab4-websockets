@@ -73,7 +73,7 @@ class ElizaOnOpenMessageHandlerToComplete(private val list: MutableList<String>,
         list.add(message)
         latch.countDown()
         if (latch.count == 1L) {
-            session.getBasicRemote().sendText("i feel angry")
+            session.getBasicRemote().sendText("i feel weird")
         }
     }
 }
